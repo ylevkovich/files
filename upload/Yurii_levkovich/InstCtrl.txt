@@ -1,0 +1,46 @@
+; S5WakeOnLan - (8169 , 8168 , 8101E)
+; FlowControl- (8169 , 8168 , 8101E)
+; PowerDownPll- (8168 , 8101E)
+; OptimalPerf- (8139)
+;
+; Example :
+; Remove the ';' will modify the parameter after installation
+;
+; Note :
+; For WOL setting, please choose one for them (unmark WOL_SETTING and its second line)
+
+;WOL_SETTING
+;WOL_PTN_AND_MAG
+;WOL_SETTING
+;WOL_MAG_ONLY
+;WOL_SETTING
+;WOL_POWER_SAVING_ONLY
+;WOL_SETTING
+;WOL_NONE
+
+;S5WakeOnLan
+;1
+;FlowControl
+;0
+;PowerDownPll
+;1
+;OptimalPerf
+;1
+
+;REG_DWORD
+;IntMitiLevel
+;0xD0D0
+
+;Diskless
+;1
+
+;PPSW
+;0
+;DisablePBA
+;1
+
+;Supp8168DPVirtualDevice
+
+;REG_DWORD
+;HwParaMask
+;0x04
